@@ -1,0 +1,49 @@
+.header-box {
+ width: 700px;
+ height: 700px;
+ position: relative;
+ outline: solid red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 200px ;
+    /* margin-top: 400px; */
+    animation-name: move-box;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    
+}
+
+
+@keyframes move-box {
+  0% {
+  transform: translate(0, 0);
+    background-color: red;
+  }
+  25% {
+   transform:  translate(0, 300px);
+   background-color: blue;
+  }
+  50% {
+    transform:  translate(300px, 300px);
+    background-color: green;
+  }
+  75% {
+  transform: translate(300px, 0);
+  background-color: yellow;
+  }
+  100% {
+    transform: translate(0, 0);
+    background-color: red;
+    
+  }
+}
+
+
+
